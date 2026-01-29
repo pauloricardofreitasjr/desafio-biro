@@ -140,7 +140,7 @@ Response payload:
   "contrato": "ABC123",
   "valor": "8500.75",
   "data_vencimento": "26/01/2026",
-  "status_pagamento": "open",
+  "status_pagamento": "em_aberto",
   "codigo_de_barras": "34191790010104351004791020150008291070000010000"
 }
 ```
