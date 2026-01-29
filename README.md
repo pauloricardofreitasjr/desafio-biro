@@ -69,15 +69,23 @@ O candidato deve entregar:
 
 A API expõe o endpoint `POST /debts/ingestion` para ingestão de dados de dívidas a partir de empresas parceiras, com os seguintes payloads:
 
+Request Body:
 ```json
 {
-  "requestId": "uuid",
-  "partnerId": "BANK_X",
-  "cpf": "12345678900",
+  "debtSource": "UTILITIES_X",
+  "document": "12345678900"
+}
+```
+
+Payload:
+```json
+{
+  "id": "uuid",
   "contractId": "ABC123",
   "amount": 8500.75,
   "dueDate": "2024-11-10",
-  "status": "OPEN"
+  "barcode": "",
+  "paid": true
 }
 ```
 
@@ -96,7 +104,7 @@ A API expõe o endpoint `POST /debts/ingestion` para ingestão de dados de dívi
     "contract": "ABC123",
     "value": 8500.75,
     "expiration": "2024-11-10",
-    "situation": "OVERDUE"
+    "paid": false
   }
 }
 ```
@@ -115,7 +123,7 @@ A API expõe o endpoint `POST /debts/ingestion` para ingestão de dados de dívi
     "contractNumber": "ABC123",
     "outstandingAmount": 8500.75,
     "dueDate": "2026-01-26",
-    "status": "ACTIVE"
+    "status": "paid"
   }
 }
 ```
@@ -130,7 +138,7 @@ A API expõe o endpoint `POST /debts/ingestion` para ingestão de dados de dívi
   "reference": "ABC123",
   "balance": "8500.75",
   "due_date": "26/01/2026",
-  "status_code": "A"
+  "status_code": "open"
 }
 ```
 
