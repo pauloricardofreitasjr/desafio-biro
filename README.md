@@ -72,12 +72,12 @@ A API expõe o endpoint `POST /debts/ingestion` para ingestão de dados de dívi
 Request Body:
 ```json
 {
-  "debtSource": "UTILITIES_X",
+  "partner": "UTILITIES_X",
   "document": "12345678900"
 }
 ```
 
-Payload:
+Response payload:
 ```json
 {
   "id": "uuid",
@@ -134,14 +134,14 @@ Payload:
 
 ```json
 {
-  "request_id": "uuid",
-  "company_id": "UTILITY_A",
-  "customer_document": "12345678900",
-  "reference": "ABC123",
-  "balance": "8500.75",
-  "due_date": "26/01/2026",
-  "status_code": "open",
-  "barcode": "34191790010104351004791020150008291070000010000"
+  "identificador": "uuid",
+  "empresa": "UTILITY_A",
+  "documento": "12345678900",
+  "contrato": "ABC123",
+  "valor": "8500.75",
+  "data_vencimento": "26/01/2026",
+  "status_pagamento": "open",
+  "codigo_de_barras": "34191790010104351004791020150008291070000010000"
 }
 ```
 
