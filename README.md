@@ -84,7 +84,7 @@ Payload:
   "contractId": "ABC123",
   "amount": 8500.75,
   "dueDate": "2024-11-10",
-  "barcode": "",
+  "barcode": "836200000015123400481009876543210000123456789012",
   "paid": true
 }
 ```
@@ -104,7 +104,8 @@ Payload:
     "contract": "ABC123",
     "value": 8500.75,
     "expiration": "2024-11-10",
-    "paid": false
+    "paid": false,
+    "barcode": "34191790010104351004791020150008291070000010000"
   }
 }
 ```
@@ -123,7 +124,8 @@ Payload:
     "contractNumber": "ABC123",
     "outstandingAmount": 8500.75,
     "dueDate": "2026-01-26",
-    "status": "paid"
+    "status": "paid",
+    "barcode": "34191790010104351004791020150008291070000010000"
   }
 }
 ```
@@ -138,7 +140,8 @@ Payload:
   "reference": "ABC123",
   "balance": "8500.75",
   "due_date": "26/01/2026",
-  "status_code": "open"
+  "status_code": "open",
+  "barcode": "34191790010104351004791020150008291070000010000"
 }
 ```
 
